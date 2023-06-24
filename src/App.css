@@ -1,0 +1,108 @@
+header{
+  padding: 1rem;
+  background-color: white;
+  & *{
+    color: rgb(58, 43, 226) !important; 
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+}
+
+.flex-page{
+  border-radius: .5rem;
+  display: flex;
+  width: min(900px, 70vw);
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: azure;
+  justify-items: center;
+  margin: auto;
+
+  & div{
+    width: 70%;
+  }
+}
+
+.sidebar{
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .5rem;
+  & a{
+    text-decoration: none;
+
+  }
+}
+
+.sidebar-right{
+  width: 15%;
+  padding: 1rem;
+}
+
+.thumbnail{
+  width: 30px;
+  padding-right: 1rem;
+}
+
+article{
+  background-color: white;
+  margin: .5rem;
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
+.vote-btns{
+  display: flex;
+  flex-direction: column;
+  max-width: 5rem;
+  align-items: center;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+
+  & b{
+    background-color: lightblue;
+    color: darkblue;
+    padding: .25rem;
+    border-radius: .25rem;
+  }
+}
+
+.container-btn{
+  justify-content: space-around;
+}
+
+
+a{
+  color: inherit;
+}
+
+b{
+  width: max-content;
+}
+
+a{
+  text-decoration: none;
+
+}
+
+.back{
+  font-size: 1.5rem;
+}
+
+.comment-header{
+  font-size: .75rem;
+  & *{
+    margin: 0;
+    background-color: transparent !important;
+  }
+}
+
+svg{
+  cursor: pointer;
+}
