@@ -37,7 +37,6 @@ const userReducer = (prevUser, { type, postId }) => {
 const UserContextProvider = ({ children }) => {
   const [user, dispatchUser] = useReducer(userReducer, forumData);
 
-  console.log(user);
   return (
     <UserContext.Provider value={{ dispatchUser, user }}>
       {children}

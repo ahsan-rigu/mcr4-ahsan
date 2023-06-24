@@ -31,6 +31,7 @@ const PostCard = ({
   },
 }) => {
   const { dispatchUser } = useContext(UserContext);
+
   return (
     <article className="flex">
       <div className="vote-btns">
@@ -62,6 +63,7 @@ const PostCard = ({
         <div className="flex">
           <img src={picUrl} alt="pic" className="thumbnail" /> posted by{" "}
           <b>@{username}</b>
+          <span>{createdAt.slice(14, 16)}m</span>
         </div>
         <h3>{post}</h3>
         <div className="flex">

@@ -8,9 +8,23 @@ const Posts = () => {
   const posts = [...user.posts];
 
   if (sort === "popular") {
-    console.log(posts);
     posts.sort((a, b) => b.upvotes - b.downvotes - a.upvotes + a.downvotes);
-    console.log(posts);
+  } else {
+    posts.sort((a, b) => {
+      const timeA = a.createdAt
+        .replaceAll("-", "")
+        .replaceAll("T", "")
+        .replaceAll("Z", "")
+        .replaceAll(":", "");
+
+      const timeB = b.createdAt
+        .replaceAll("-", "")
+        .replaceAll("T", "")
+        .replaceAll("Z", "")
+        .replaceAll(":", "");
+
+      return Number(timeB) - Number(timeA);
+    });
   }
 
   return (

@@ -26,7 +26,8 @@ const Post = () => {
             <div className="flex">
               <img src={picUrl} alt="pic" className="thumbnail" />
               <div className="comment-header">
-                posted by <b>@{username}</b>
+                posted by <b>@{username}</b>{" "}
+                <span>{createdAt.slice(14, 16)}m</span>
                 <p>replying to @{post.username}</p>
               </div>
             </div>
